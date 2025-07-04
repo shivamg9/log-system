@@ -1,0 +1,60 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filter-bar input, .filter-bar select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.log-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.log-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #ccc; /* Default border */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Visual cues for log levels */
+.log-item--error { border-left-color: #e57373; }
+.log-item--warn { border-left-color: #ffb74d; }
+.log-item--info { border-left-color: #64b5f6; }
+.log-item--debug { border-left-color: #81c784; }
+
+.log-header, .log-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.log-message {
+    margin: 10px 0;
+    font-family: monospace;
+}
